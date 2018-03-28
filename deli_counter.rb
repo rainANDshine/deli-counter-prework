@@ -1,17 +1,16 @@
-function takeANumber(katzDeliLine, newCustomer) {
-  katzDeliLine.push(newCustomer);
-  totalNumber++;
-  return "Welcome, " + newCustomer + ". You are number " + totalNumber + " in line.";
-}
+def take_a_number(katz_deli, newCustomer)
+  katz_deli << newCustomer
+  "Welcome, #{newCustomer}. You are number #{katz_deli[-1]} in line."
+end
 
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length === 0) {
+def nowServing(katz_deli)
+  if katz_deli.length == 0
     return "There is nobody waiting to be served!";
   } else {
     var temp = katzDeliLine.shift();
     return "Currently serving " + temp + ".";
   }
-}
+end
 
 def line(katz_deli)
   string = "The line is currently: "
