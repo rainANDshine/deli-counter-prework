@@ -13,10 +13,10 @@ function nowServing(katzDeliLine) {
   }
 }
 
-def line(katzDeliLine) {
-  var string = "The line is currently: ";
+def line(katz_deli) {
+  string = "The line is currently: "
   
-  if (katzDeliLine.length === 0) {
+  if (katz_deli.length == 0) {
     return "The line is currently empty.";
   } 
   else {
