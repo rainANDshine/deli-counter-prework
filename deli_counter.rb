@@ -13,19 +13,15 @@ function nowServing(katzDeliLine) {
   }
 }
 
-def line(katz_deli) {
+def line(katz_deli)
   string = "The line is currently: "
   
-  if (katz_deli.length == 0) {
-    return "The line is currently empty.";
-  } 
-  else {
-    for(var i = 0; i < katzDeliLine.length; i++) {
-      string += (i+1) + ". " + katzDeliLine[i];
-      if (i != katzDeliLine.length-1) {
-        string += ", ";
-      }
+  if katz_deli.length == 0
+    "The line is currently empty.";
+  else
+    katz_deli.each_with_index { |name, index|
+      string += "#{index+1}. #{name}"
     }
-    return string;
-  }
-}
+  end
+  string
+end
