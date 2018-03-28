@@ -20,6 +20,6 @@ def line(katz_deli)
     katz_deli.each_with_index { |name, index|
       string += "#{index+1}. #{name} "
     }
-    puts string
+    puts string.chop
   end
 end
