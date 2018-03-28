@@ -5,11 +5,11 @@ end
 
 def nowServing(katz_deli)
   if katz_deli.length == 0
-    return "There is nobody waiting to be served!";
-  } else {
-    var temp = katzDeliLine.shift();
-    return "Currently serving " + temp + ".";
-  }
+    "There is nobody waiting to be served!";
+  else
+    name = katz_deli.shift;
+    "Currently serving #{name}."
+  end
 end
 
 def line(katz_deli)
