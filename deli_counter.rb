@@ -13,7 +13,7 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function currentLine(katzDeliLine) {
+def line(katzDeliLine) {
   var string = "The line is currently: ";
   
   if (katzDeliLine.length === 0) {
