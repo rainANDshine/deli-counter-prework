@@ -18,8 +18,8 @@ def line(katz_deli)
   else
     string = "The line is currently: "
     katz_deli.each_with_index { |name, index|
-      string += "#{index+1}. #{name}"
+      string += "#{index+1}. #{name} "
     }
-    puts string
+    puts string.
   end
 end
