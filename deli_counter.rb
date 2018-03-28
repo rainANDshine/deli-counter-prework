@@ -1,6 +1,6 @@
 def take_a_number(katz_deli, newCustomer)
   katz_deli << newCustomer
-  puts "Welcome, #{newCustomer}. You are number #{katz_deli.count} in line."
+  puts "Welcome, #{newCustomer}. You are number #{katz_deli.length} in line."
 end
 
 def nowServing(katz_deli)
